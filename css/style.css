@@ -18,8 +18,8 @@
     box-sizing: border-box;
 }
 
-.limitar-secao {
-    width: 100%;
+.wrapper {
+    width: 90%;
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -34,105 +34,113 @@ header {
     background-color: var(--azul-principal);
 }
 
-.container-cabecalho { 
+.container_cabecalho { 
     display: flex;
     justify-content: space-between;
     padding: 1rem 0rem;
 }
 
-.cabecalho-menu {
+.cabecalho_menu {
     display: flex;
     gap: 3.75rem;
 }
 
-.cabecalho-menu-links {
+.cabecalho_menu_links {
     font-size: 1.125rem;
-    font-weight: 300;
     display: flex;
     align-items: center;
     gap: 2rem;
+    transition: transform 0.1s;
 }
 
-.cabecalho-link {
+.cabecalho_link {
     color: var(--branco-fontes);
     text-decoration: none;
     display: flex;
 }
 
-.cabecalho-menu-botao {
+.cabecalho_link:hover {
+    transform: scale(1.1);
+}
+
+.cabecalho_menu_botao {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
 
-.cabecalho-botao {
-    padding: 1rem 2.5rem;
-    border-radius: 8px;
+.cabecalho_botao {
+    padding: 1rem 2.25rem;
+    border-radius: 0.5rem;
     cursor: pointer;
     border: none;
     display: flex;
     gap: 0.5rem;
+    transition: transform 0.1s;
 }
 
-.login-botao {
+.cabecalho_botao:hover {
+    transform: scale(1.1);
+}
+
+.login_botao {
     background-color: var(--amarelo-detalhes);
-    color: var(--azul-principal);
+    color: var(--azul-principal);   
 }
 
-.try-botao {
+.try_botao {
     background-color: var(--azul-claro-detalhes);
     color: var(--branco-fontes);
 }
 
 /* Main - Section 1 */
 
-.section-um-pai {
+.section_header {
     background-color: var(--azul-principal);
 }
 
-.container-section-um {
+.container_section_header {
     display: flex;
     align-items: center;
     padding: 8.75rem 0rem;
 }
 
-.section-um-background {
+.section_header_background {
     position: absolute;
 }
 
-.section-um-background > img {
+.section_header_background > img {
     position: relative;
     left: -22.875rem;
 }
 
-.section-um-conteudo {
+.section_header_contents {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 3.75rem;
 }
 
-.section-um-text-box {
+.section_header_texto {
     color: var(--branco-fontes);
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.section-um-text-box > h2 {
+.section_header_texto > h2 {
     font-size: 4rem;
 }
 
-.section-um-text-box > p {
+.section_header_texto > p {
     font-size: 1.125rem;
-    font-weight: 300;
 }
 
-.image-section-um {
+.image_section_header {
     height: 34rem;
 }
 
-.image-section-um > img {
+.image_section_header > img {
     width: 100%;
     height: 100%;
 }
