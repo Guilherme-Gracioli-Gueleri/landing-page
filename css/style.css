@@ -1,5 +1,6 @@
 /* Imports - fonts */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* Variáveis CSS */
 
@@ -8,6 +9,7 @@
     --branco-fontes: #FFFFFF;
     --azul-claro-detalhes: #4F9CF9;
     --amarelo-detalhes: #FFE492;
+    --fonte-principal: 'Inter', sans-serif;
 }
 
 /* Estilos Globais */
@@ -18,125 +20,118 @@
     box-sizing: border-box;
 }
 
-.wrapper {
-    width: 90%;
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
 html {
   font-size: 62.5%; /* 62.5% de 16px = 10px */
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;   
+    font-family: var(--fonte-principal);
 }
 
 /* Header - Cabeçalho da página */
+
+.wrapper {
+    width: 90%;
+    max-width: 1480px;
+    margin: 0 auto;
+}
 
 .header {
     background-color: var(--azul-principal);
 }
 
-.container { 
+.header > .container { 
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0rem;
+    align-items: center;
+    padding: 1.6rem 0rem;
 }
 
 .menu {
     display: flex;
-    gap: 3.75rem;
+    align-items: center;
+    gap: 5.55rem;
 }
 
-.links {
+.links > ul {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    list-style: none;
+    gap: 3.2rem;
 }
 
 .link {
     color: var(--branco-fontes);
+    display: flex;
     text-decoration: none;
-    font-size: 1.125rem;
-    display: flex;  
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.link::after {
+    content: url('data:image/svg+xml,<svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 10L15 14L19.5 10" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    padding-left: 1rem;
 }
 
 .buttons {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2.4rem;
 }
 
 .button {
-    padding: 1rem 2.25rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
+    padding: 1.85rem 4rem;
+    border-radius: 0.8rem;
     border: none;
-    display: flex;
-    gap: 0.5rem;
+    cursor: pointer;
 }
 
 .button[data-type="login"] {
     background-color: var(--amarelo-detalhes);
-    color: var(--azul-principal);   
+    color: var(--azul-principal); 
+    font-family: var(--fonte-principal);
+    font-size: 1.8rem; 
 }
 
 .button[data-type="try"] {
     background-color: var(--azul-claro-detalhes);
     color: var(--branco-fontes);
+    font-family: var(--fonte-principal);
+    font-size: 1.8rem;
+}
+
+.button[data-type="try"]::after {
+    content: url('data:image/svg+xml,<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 6H11" stroke="white" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 1L11 6L6 11" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    padding-left: 1rem;
 }
 
 /* Main - Section 1 */
 
-/* .section_header {
+.hero_section {
     background-color: var(--azul-principal);
+    padding: 14rem 0rem;
 }
 
-.container_section_header {
+.hero_section > .container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 8.75rem 0rem;
 }
 
-.section_header_background {
-    position: absolute;
-}
-
-.section_header_background > img {
-    position: relative;
-    left: -22.875rem;
-}
-
-.section_header_contents {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 3.75rem;
-}
-
-.section_header_texto {
+.heading > h1 {
+    font-family: var(--fonte-principal);
     color: var(--branco-fontes);
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    font-size: 6.4rem;
+    font-weight: bold;
+    margin-bottom: 2.4rem;
 }
 
-.section_header_texto > h2 {
-    font-size: 4rem;
+.heading > p {
+    font-family: var(--fonte-principal);
+    color: var(--branco-fontes);
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 6rem;
 }
-
-.section_header_texto > p {
-    font-size: 1.125rem;
-}
-
-.image_section_header {
-    height: 34rem;
-}
-
-.image_section_header > img {
-    width: 100%;
-    height: 100%;
-} */
 
 /* Footer - Rodapé da página */
