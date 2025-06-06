@@ -263,6 +263,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 6rem;
 }
 
@@ -287,15 +288,128 @@ body {
 
 /* Main - Section 5 -> tables */
 
+.tables_section > .container > .tables {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
 
+.tables_section > .container > .tables > .table_yellow {
+    padding: 4rem 4.4rem;
+    border: 0.1rem var(--amarelo-detalhes) solid;
+    border-radius: 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.tables_section > .container > .tables > .table_yellow > .head {
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+}
+
+.tables_section > .container > .tables > .table_yellow > .head > h3 {
+    font-family: var(--fonte-principal);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.tables_section > .container > .tables > .table_yellow > .head > strong {
+    font-family: var(--fonte-principal);
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+
+.tables_section > .container > .tables > .table_yellow > .head > p {
+    font-family: var(--fonte-principal);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.tables_section > .container > .tables > .table_yellow > .list_table > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    list-style-type: none;
+}
+
+.tables_section > .container > .tables > .table_yellow > .list_table > ul > li > .text  {
+    font-family: var(--fonte-principal);
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.tables_section > .container > .tables > .table_yellow > .list_table > ul > li > .text::before {
+    content: url('data:image/svg+xml,<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.0059 9.76404V10.5923C19.0047 12.5337 18.3761 14.4228 17.2137 15.9777C16.0512 17.5326 14.4173 18.6702 12.5556 19.2206C10.6938 19.7711 8.70404 19.705 6.88294 19.0322C5.06183 18.3594 3.507 17.1159 2.45034 15.4873C1.39367 13.8586 0.891777 11.932 1.01952 9.9948C1.14725 8.05759 1.89778 6.21358 3.15915 4.73777C4.42053 3.26196 6.12517 2.23344 8.01885 1.80558C9.91253 1.37773 11.8938 1.57348 13.6671 2.36363" stroke="%23212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.0059 3.38986L10.0029 12.4018L7.30206 9.70091" stroke="%23212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    padding-right: 1.9rem;
+}
+
+.tables_section > .container > .tables > .table_blue {
+    padding: 8rem 4.4rem;
+    background-color: var(--azul-principal);
+    border-radius: 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.tables_section > .container > .tables > .table_blue > .head {
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+}
+
+.tables_section > .container > .tables > .table_blue > .head > h3 {
+    font-family: var(--fonte-principal);
+    color: var(--branco-fontes);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.tables_section > .container > .tables > .table_blue > .head > strong {
+    font-family: var(--fonte-principal);
+    color: var(--amarelo-detalhes);
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+
+.tables_section > .container > .tables > .table_blue > .head > p {
+    font-family: var(--fonte-principal);
+    color: var(--branco-fontes);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.tables_section > .container > .tables > .table_blue > .list_table > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    list-style-type: none;
+}
+
+.tables_section > .container > .tables > .table_blue > .list_table > ul > li > .text  {
+    font-family: var(--fonte-principal);
+    color: var(--branco-fontes);
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.tables_section > .container > .tables > .table_blue > .list_table > ul > li > .text::before {
+    content: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.3392 9.76404V10.5923C19.3381 12.5337 18.7094 14.4228 17.547 15.9777C16.3846 17.5326 14.7507 18.6702 12.8889 19.2206C11.0272 19.7711 9.03738 19.705 7.21628 19.0322C5.39518 18.3594 3.84035 17.1159 2.78368 15.4873C1.72701 13.8586 1.22512 11.932 1.35286 9.9948C1.4806 8.05759 2.23112 6.21358 3.4925 4.73777C4.75387 3.26196 6.45852 2.23344 8.3522 1.80558C10.2459 1.37773 12.2271 1.57348 14.0005 2.36363" stroke="%23FFE492" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.3392 3.38986L10.3363 12.4018L7.63539 9.70091" stroke="%23FFE492" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    padding-right: 1.9rem;
+}
 
 /* Main - Section 5 -> Tables -> Buttons tables */
 
 .button[data-type="Started-y"] {
     font-family: var(--fonte-principal);
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 600;
     background-color: transparent;
+    border-radius: 1rem;
     border: 0.1rem var(--amarelo-detalhes) solid;
 }
 
@@ -303,8 +417,43 @@ body {
     font-family: var(--fonte-principal);
     color: var(--branco-fontes);
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 600;
     background-color: var(--azul-claro-detalhes);
+}
+
+/* Main - Section 6 */
+
+.plataforma_section {
+    padding: 14rem 0rem;
+    background-color: var(--azul-principal);
+}
+
+.plataforma_section > .container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.plataforma_section > .container > .headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plataforma_section > .container > .headline > h3 {
+    font-family: var(--fonte-principal);
+    color: var(--branco-fontes);
+    font-size: 7.2rem;
+    font-weight: bold;
+    margin-bottom: 2.4rem;
+}
+
+.plataforma_section > .container > .headline > p {
+    font-family: var(--fonte-principal);
+    color: var(--branco-fontes);
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 6rem;
 }
 
 
