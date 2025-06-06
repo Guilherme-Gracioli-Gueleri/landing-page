@@ -80,7 +80,7 @@ body {
 }
 
 .button {
-    padding: 1.85rem 4rem;
+    padding: 1.6rem 4rem;
     border-radius: 0.8rem;
     border: none;
     cursor: pointer;
@@ -118,7 +118,7 @@ body {
     align-items: center;
 }
 
-.heading > h1 {
+.hero_section > .container > .heading > h1 {
     font-family: var(--fonte-principal);
     color: var(--branco-fontes);
     font-size: 6.4rem;
@@ -126,12 +126,202 @@ body {
     margin-bottom: 2.4rem;
 }
 
-.heading > p {
+.hero_section > .container > .heading > p {
     font-family: var(--fonte-principal);
     color: var(--branco-fontes);
     font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 6rem;
 }
+
+/* Main - Section 2 */
+
+.work_section {
+    padding: 14rem 0rem;
+}
+
+.work_section > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+}
+
+.content_um {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.content_um > .headline > h2 {
+    font-family: var(--fonte-principal);
+    font-size: 7.2rem;
+    font-weight: bold;
+    margin-bottom: 2.4rem;
+}
+
+.content_um > .headline > p {
+    font-family: var(--fonte-principal);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem;
+    margin-bottom: 6rem;
+    letter-spacing: 0.003rem;
+}
+
+.content_dois {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.content_dois > .headline > h2 {
+    font-family: var(--fonte-principal);
+    font-size: 7.2rem;
+    font-weight: bold;
+    margin-bottom: 2.4rem;
+}
+
+.content_dois > .headline > p {
+    font-family: var(--fonte-principal);
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 6rem;
+    line-height: 3rem;
+}
+
+/* Main - Section 3 */
+
+.extension_section {
+    background-color: var(--azul-principal);
+    padding: 14rem 0rem;
+}
+
+.extension_section > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9.8rem;
+}
+
+.extension_section > .container > .headline > h2 {
+    font-family: var(--fonte-principal);
+    color: var(--branco-fontes);
+    font-weight: bold;
+    font-size: 7.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.extension_section > .container > .headline > p {
+    font-family: var(--fonte-principal);
+    color: var(--branco-fontes);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem;
+    margin-bottom: 6rem;
+}
+
+/* Main - Section 4 */
+
+.needs_section {
+    padding: 14rem 0rem;
+}
+
+.needs_section > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9.8rem;
+}
+
+.needs_section > .container > .headline > h2 {
+    font-family: var(--fonte-principal);
+    font-size: 7.2rem;
+    font-weight: bold;
+    margin-bottom: 2.4rem;
+    letter-spacing: 0.0009rem;
+}
+
+.needs_section > .container > .headline > p {
+    font-family: var(--fonte-principal);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem;
+    margin-bottom: 6rem;
+}
+
+/* Main - Section 5 */
+
+.pricing_section {
+    padding: 14rem 0rem;
+}
+
+.pricing_section > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.pricing_section > .container > .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pricing_section > .container > .heading > h2 {
+    font-family: var(--fonte-principal);
+    font-size: 7.2rem;
+    font-weight: bold;
+}
+
+.pricing_section > .container > .heading > p {
+    font-family: var(--fonte-principal);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem;
+}
+
+/* Main - Section 5 -> tables */
+
+.pricing_section > .container > .price_list {  /* div tabelas */
+    display: flex;
+    gap: 3.2rem;
+}
+
+.pricing_section > .container > .price_list > .tabela-2-especial {  /* tabela 2 */
+    padding: 8rem 4.4rem;
+    background-color: var(--azul-principal);
+    color: red;
+}
+
+.pricing_section > .container > .price_list > .price_board { /* tabela 1 e 3 */
+    padding: 4rem 4.4rem;
+    border: 0.1rem var(--amarelo-detalhes) solid;
+}
+
+/* Main - Section 5 -> Tables -> Buttons tables */
+
+.button[data-type="Started-y"] {
+    font-family: var(--fonte-principal);
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: 0.1rem var(--amarelo-detalhes) solid;
+}
+
+.button[data-type="Started-b"] {
+    font-family: var(--fonte-principal);
+    color: var(--branco-fontes);
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: var(--azul-claro-detalhes);
+}
+
 
 /* Footer - Rodapé da página */
