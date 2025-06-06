@@ -255,32 +255,30 @@ body {
 
 /* Main - Section 5 */
 
-.pricing_section {
+.tables_section {
     padding: 14rem 0rem;
 }
 
-.pricing_section > .container {
+.tables_section > .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 6rem;
 }
 
-.pricing_section > .container > .heading {
+.tables_section > .container > .heading {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
-.pricing_section > .container > .heading > h2 {
+.tables_section > .container > .heading > h2 {
     font-family: var(--fonte-principal);
     font-size: 7.2rem;
     font-weight: bold;
 }
 
-.pricing_section > .container > .heading > p {
+.tables_section > .container > .heading > p {
     font-family: var(--fonte-principal);
     font-size: 1.8rem;
     font-weight: 300;
@@ -289,21 +287,7 @@ body {
 
 /* Main - Section 5 -> tables */
 
-.pricing_section > .container > .price_list {  /* div tabelas */
-    display: flex;
-    gap: 3.2rem;
-}
 
-.pricing_section > .container > .price_list > .tabela-2-especial {  /* tabela 2 */
-    padding: 8rem 4.4rem;
-    background-color: var(--azul-principal);
-    color: red;
-}
-
-.pricing_section > .container > .price_list > .price_board { /* tabela 1 e 3 */
-    padding: 4rem 4.4rem;
-    border: 0.1rem var(--amarelo-detalhes) solid;
-}
 
 /* Main - Section 5 -> Tables -> Buttons tables */
 
