@@ -622,4 +622,102 @@ body {
     margin-bottom: 6rem;
 }
 
+/* Main - Section 10 */
+
+.cards_clients {
+    padding: 14rem 0rem;
+}
+
+.cards_clients > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.cards_clients > .container > .headline > h3 {
+    font-family: var(--fonte-principal);
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.cards_clients > .container > .card {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.cards_clients > .container > .card > .client {
+    padding: 6rem 4rem;
+    border-radius: 1rem;
+    background-color: var(--azul-claro-detalhes);
+}
+
+.cards_clients > .container > .card > .client > .comment > p {
+    font-family: var(--fonte-principal);
+    color: var(--branco-fontes);
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 3.2rem;
+    margin-bottom: 4rem;
+}
+
+.cards_clients > .container > .card > .client > .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.2rem;
+    margin-top: 6rem;
+}
+
+.cards_clients > .container > .card > .client > .name > div > h4 {
+    font-family: var(--fonte-principal);
+    color: var(--azul-principal);
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.cards_clients > .container > .card > .client > .name > div > p {
+    font-family: var(--fonte-principal);
+    color: var(--branco-fontes);
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.cards_clients > .container > .card > .client-w {
+    padding: 6rem 4rem;
+    border-radius: 1rem;
+    background-color: #c4c2c2;
+}
+
+.cards_clients > .container > .card > .client-w > .comment > p {
+    font-family: var(--fonte-principal);
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 3.2rem;
+    margin-bottom: 4rem;
+}
+
+.cards_clients > .container > .card > .client-w > .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.2rem;
+    margin-top: 6rem;
+}
+
+.cards_clients > .container > .card > .client-w > .name > div > h4 {
+    font-family: var(--fonte-principal);
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.cards_clients > .container > .card > .client-w > .name > div > p {
+    font-family: var(--fonte-principal);
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
 /* Footer - Rodapé da página */
